@@ -1,5 +1,3 @@
-package MainExam1;
-
 import java.io.*;
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +13,8 @@ public class Frame1 {
     Frame1() {
 
         JFrame f1 = new JFrame("Forever Diamonds");
-
+        Image imgIcon = Toolkit.getDefaultToolkit().getImage("D:\\JavaStuff\\Java1\\src\\MainExam1\\images.png");
+        f1.setIconImage(imgIcon);
 
 
 
@@ -76,47 +75,47 @@ public class Frame1 {
 
 
 
-        JButton b1 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\1p.jpg"));
+        JButton b1 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\1p.jpg"));
         b1.setToolTipText(" Material: Silver S925 (92.5% Silver and 7.5% other metals produced by Italian Silver technology) beautifully polished, non-rusting, non-allergic, easy to lighten and maintain");
         b1.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[0]));
         b1.setOpaque(false);
         b1.setContentAreaFilled(false);
-        JButton b2 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\2.jpg"));
+        JButton b2 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\2.jpg"));
         b2.setToolTipText("Material: Silver S925 Color: Silver Free jewelry box and silk mesh bag/order Style: Chic, elegant / cute, pretty");
         b2.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[1]));
         b2.setOpaque(false);
         b2.setContentAreaFilled(false);
-        JButton b3 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\3.jpg"));
+        JButton b3 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\3.jpg"));
         b3.setToolTipText("Material: High quality 925 sterling silver - Strap length: 42cm (under 60kg fits around the neck) - Style: Small, delicate, sharp, modern design");
         b3.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[2]));
         b3.setOpaque(false);
         b3.setContentAreaFilled(false);
-        JButton b4 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\4.jpg"));
+        JButton b4 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\4.jpg"));
         b4.setToolTipText("The Obsidian stone represents the root chakra, offering grounding and protection. This necklace symbolizes reconnecting with your deep roots and stability as you explore your depths. Made of volcanic glass, Obsidian is known as a stone that works like magic thanks to its metaphysical characteristics.");
         b4.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[3]));
         b4.setOpaque(false);
         b4.setContentAreaFilled(false);
-        JButton b5 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\5.jpg"));
+        JButton b5 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\5.jpg"));
         b5.setToolTipText("Blue topaz is an incredibly versatile gemstone that is both impressively strong as well as stunningly beautiful! It is hard to go wrong with a blue topaz necklace and it even comes in multiple different shades to best match your preferences.");
         b5.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[4]));
         b5.setOpaque(false);
         b5.setContentAreaFilled(false);
-        JButton b6 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\6.jpg"));
+        JButton b6 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\6.jpg"));
         b6.setToolTipText("Aquamarine Necklace This stunning aquamarine necklace is handmade using sterling silver. An aquamarine gemstone is the hero of the piece. The gemstone hangs within seven sterling silver rings each ring representing someone special in the wearers life.");
         b6.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[5]));
         b6.setOpaque(false);
         b6.setContentAreaFilled(false);
-        JButton b7 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\7.jpg"));
+        JButton b7 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\7.jpg"));
         b7.setToolTipText("sugilite bead bracelet is a special pain reliever and excellent stone for self-clear. It helps to clear headaches. Sugilite Bracelet It symbolizes purpose, hope, and harmony.");
         b7.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[6]));
         b7.setOpaque(false);
         b7.setContentAreaFilled(false);
-        JButton b8 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\8.jpg"));
+        JButton b8 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\8.jpg"));
         b8.setToolTipText("The Opal Bracelet is not your average friendship bracelet. It's refined, with a centrepiece of opals and gleaming cubic zirconia stones, but simple and fine.");
         b8.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[7]));
         b8.setOpaque(false);
         b8.setContentAreaFilled(false);
-        JButton b9 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\9.jpg"));
+        JButton b9 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\9.jpg"));
         b9.setToolTipText("Quartz is the most powerful healing stone of the mineral kingdom, it’s able to work on any condition. Clear Quartz is known as the stone of power and amplifies any energy or intention.");
         b9.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[8]));
         b9.setOpaque(false);
@@ -180,10 +179,12 @@ public class Frame1 {
 
 
                 TotalP.Basket[0] =  TotalP.Basket [0] + 1;
+
                 TotalP.TotalRetail[0] = TotalP.TotalRetail[0] + TotalP.myNum[0];
-                TotalP.TotalWholesale[0] = TotalP.TotalWholesale[0] + TotalP.myWholesale[0];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[0];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[0];
+                TotalP.WholesaleChecker();
+                JOptionPane.showMessageDialog(null, "Purchase Successful");
 
 
             }
@@ -198,7 +199,7 @@ public class Frame1 {
                 TotalP.TotalWholesale[1] = TotalP.TotalWholesale[1] + TotalP.myWholesale[1];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[1];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[1];
-
+                JOptionPane.showMessageDialog(null, "Purchase Successful");
                 }
 
         });
@@ -210,6 +211,7 @@ public class Frame1 {
                 TotalP.TotalWholesale[2] = TotalP.TotalWholesale[2] + TotalP.myWholesale[2];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[2];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[2];
+                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -221,6 +223,7 @@ public class Frame1 {
                 TotalP.TotalWholesale[3] = TotalP.TotalWholesale[3] + TotalP.myWholesale[3];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[3];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[3];
+                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -232,6 +235,7 @@ public class Frame1 {
                 TotalP.TotalWholesale[4] = TotalP.TotalWholesale[4] + TotalP.myWholesale[4];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[4];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[4];
+                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -243,6 +247,7 @@ public class Frame1 {
                 TotalP.TotalWholesale[5] = TotalP.TotalWholesale[5] + TotalP.myWholesale[5];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[5];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[5];
+                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -254,6 +259,7 @@ public class Frame1 {
                 TotalP.TotalWholesale[6] = TotalP.TotalWholesale[6] + TotalP.myWholesale[6];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[6];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[6];
+                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -265,17 +271,20 @@ public class Frame1 {
                 TotalP.TotalWholesale[7] = TotalP.TotalWholesale[7] + TotalP.myWholesale[7];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[7];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[7];
+                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
         b9.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 TotalP.Basket[8] =  TotalP.Basket [8] + 1;
                 TotalP.TotalRetail[8] = TotalP.TotalRetail[8] + TotalP.myNum[8];
                 TotalP.TotalWholesale[8] = TotalP.TotalWholesale[8] + TotalP.myWholesale[8];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[8];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[8];
+                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -302,23 +311,24 @@ public class Frame1 {
     public void ReceiptTXT() {
 
         try {
-            FileWriter myWriter = new FileWriter("D:\\JavaStuff\\Java1\\src\\MainExam1\\filename.txt");
-            myWriter.write("----------------------------------------------------\n");
-            myWriter.write("         *         Forever Gems         *             \n");
-            myWriter.write("----------------------------------------------------\n");
-            myWriter.write("Product" + "\t\t\t\t\t\t\t\t\t" + "Retail" + "\t" + "Wholesale\n");
+            FileWriter myWriter = new FileWriter("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\filename.txt");
+            myWriter.write("------------------------------------------------------------------\n");
+            myWriter.write("  \t\t       *         Forever Gems         *             \n");
+            myWriter.write("------------------------------------------------------------------\n");
+            myWriter.write("Product" + "\t\t\t\t\t\t\t\t\t\t\t\t" + "Retail" + "\t" + "\n");
 
-            myWriter.write( TotalP.Basket[0] + "x" + "\t" + ProductP.StringP[0] + "\t\t\t\t\t\t" + TotalP.TotalRetail[0] + "\t" + TotalP.TotalWholesale[0] + "\t" + "\n");
-            myWriter.write( TotalP.Basket[1] + "x" + "\t" + ProductP.StringP[1] + "\t\t\t\t\t\t" + TotalP.TotalRetail[1] + "\t" + TotalP.TotalWholesale[1] + "\t" + "\n");
-            myWriter.write( TotalP.Basket[2] + "x" + "\t" + ProductP.StringP[2] + "\t\t\t\t\t" + TotalP.TotalRetail[2] + "\t" + TotalP.TotalWholesale[2] + "\t" + "\n");
-            myWriter.write( TotalP.Basket[3] + "x" + "\t" + ProductP.StringP[3] + "\t\t\t\t\t" + TotalP.TotalRetail[3] + "\t" + TotalP.TotalWholesale[3] + "\t" + "\n");
-            myWriter.write( TotalP.Basket[4] + "x" + "\t" + ProductP.StringP[4] + "\t\t\t\t\t\t" + TotalP.TotalRetail[4] + "\t" + TotalP.TotalWholesale[4] + "\t" + "\n");
-            myWriter.write( TotalP.Basket[5] + "x" + "\t" + ProductP.StringP[5] + "\t\t\t\t\t" + TotalP.TotalRetail[5] + "\t" + TotalP.TotalWholesale[5] + "\t" + "\n");
-            myWriter.write( TotalP.Basket[6] + "x" + "\t" + ProductP.StringP[6] + "\t\t\t\t\t" + TotalP.TotalRetail[6] + "\t" + TotalP.TotalWholesale[6] + "\t" + "\n");
-            myWriter.write( TotalP.Basket[7] + "x" + "\t" + ProductP.StringP[7] + "\t\t\t\t\t\t" + TotalP.TotalRetail[7] + "\t" + TotalP.TotalWholesale[7] + "\t" + "\n");
-            myWriter.write( TotalP.Basket[8] + "x" + "\t" + ProductP.StringP[8] + "\t\t\t\t\t\t" + TotalP.TotalRetail[8] + "\t" + TotalP.TotalWholesale[8] + "\t" + "\n");
-            myWriter.write("----------------------------------------------------\n");
-            myWriter.write( "Total Amount" + "\t\t\t\t\t\t\t" + TotalP.Transac[0] + "\t" + TotalP.Transac[1]);
+            myWriter.write( TotalP.Basket[0] + "x" + "\t" + ProductP.StringP[0] + "\t\t\t\t\t\t\t\t\t" + TotalP.TotalRetail[0] + "\t"  + "\n");
+            myWriter.write( TotalP.Basket[1] + "x" + "\t" + ProductP.StringP[1] + "\t\t\t\t\t\t\t\t\t" + TotalP.TotalRetail[1] + "\t"  + "\n");
+            myWriter.write( TotalP.Basket[2] + "x" + "\t" + ProductP.StringP[2] + "\t\t\t\t\t\t\t\t" + TotalP.TotalRetail[2] + "\t"  + "\n");
+            myWriter.write( TotalP.Basket[3] + "x" + "\t" + ProductP.StringP[3] + "\t\t\t\t\t\t\t\t" + TotalP.TotalRetail[3] + "\t" + "\n");
+            myWriter.write( TotalP.Basket[4] + "x" + "\t" + ProductP.StringP[4] + "\t\t\t\t\t\t\t\t\t" + TotalP.TotalRetail[4] + "\t"  + "\n");
+            myWriter.write( TotalP.Basket[5] + "x" + "\t" + ProductP.StringP[5] + "\t\t\t\t\t\t\t\t" + TotalP.TotalRetail[5] + "\t"  + "\n");
+            myWriter.write( TotalP.Basket[6] + "x" + "\t" + ProductP.StringP[6] + "\t\t\t\t\t\t\t\t" + TotalP.TotalRetail[6] + "\t"  + "\n");
+            myWriter.write( TotalP.Basket[7] + "x" + "\t" + ProductP.StringP[7] + "\t\t\t\t\t\t\t\t\t" + TotalP.TotalRetail[7] + "\t"  + "\n");
+            myWriter.write( TotalP.Basket[8] + "x" + "\t" + ProductP.StringP[8] + "\t\t\t\t\t\t\t\t\t" + TotalP.TotalRetail[8] + "\t"  + "\n");
+            myWriter.write("------------------------------------------------------------------\n");
+            myWriter.write( "\t\t\t\t\t\t\t\t\t\t" + "Retail Total" + "\t" + "Wholesale Total\n");
+            myWriter.write( "Total Amount" + "\t\t\t\t\t\t\t" + TotalP.Transac[0] + "\t\t\t" + TotalP.Transac[1]);
               myWriter.close();
 
             System.out.println("Successfully wrote to the file.");

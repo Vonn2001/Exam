@@ -1,15 +1,16 @@
-----------------------------------------------------
-         *         Forever Gems         *             
-----------------------------------------------------
-Product									Retail	Wholesale
-0x	Cat Bracelet						0.0	0.0	
-0x	Bell bracelet						0.0	0.0	
-0x	Butterfly necklace					0.0	0.0	
-1x	Obsidian Necklace					4800.0	4600.0	
-1x	Topaz Necklace						5600.0	5400.0	
-1x	Aquamarine Necklace					7000.0	6800.0	
-1x	Sugilite Bracelet					3500.0	3200.0	
-1x	Opal Bracelet						6800.0	6600.0	
-1x	Quartz Bracelet						5400.0	5200.0	
-----------------------------------------------------
-Total Amount							33100.0	31800.0
+------------------------------------------------------------------
+  		       *         Forever Gems         *             
+------------------------------------------------------------------
+Product												Retail	
+1x	Cat Bracelet									3000.0	
+0x	Bell bracelet									0.0	
+0x	Butterfly necklace								0.0	
+0x	Obsidian Necklace								0.0	
+1x	Topaz Necklace									5600.0	
+0x	Aquamarine Necklace								0.0	
+1x	Sugilite Bracelet								3500.0	
+1x	Opal Bracelet									6800.0	
+0x	Quartz Bracelet									0.0	
+------------------------------------------------------------------
+										Retail Total	Wholesale Total
+Total Amount							18900.0			15900.0
