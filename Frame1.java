@@ -1,5 +1,3 @@
-package MainExam2.MainExam1;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
