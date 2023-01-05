@@ -1,5 +1,3 @@
-package MainExam2.MainExam1;
-
 class ProdNames {
     String[] StringP = {"Cat Bracelet", "Bell bracelet", "Butterfly necklace", "Obsidian Necklace", "Topaz Necklace", "Aquamarine Necklace", "Sugilite Bracelet", "Opal Bracelet", "Quartz Bracelet"};
 }
