@@ -1,4 +1,5 @@
-import java.io.*;
+package MainExam2.MainExam1;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -75,47 +76,47 @@ public class Frame1 {
 
 
 
-        JButton b1 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\1p.jpg"));
+        JButton b1 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\1p.jpg"));
         b1.setToolTipText(" Material: Silver S925 (92.5% Silver and 7.5% other metals produced by Italian Silver technology) beautifully polished, non-rusting, non-allergic, easy to lighten and maintain");
         b1.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[0]));
         b1.setOpaque(false);
         b1.setContentAreaFilled(false);
-        JButton b2 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\2.jpg"));
+        JButton b2 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\2.jpg"));
         b2.setToolTipText("Material: Silver S925 Color: Silver Free jewelry box and silk mesh bag/order Style: Chic, elegant / cute, pretty");
         b2.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[1]));
         b2.setOpaque(false);
         b2.setContentAreaFilled(false);
-        JButton b3 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\3.jpg"));
+        JButton b3 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\3.jpg"));
         b3.setToolTipText("Material: High quality 925 sterling silver - Strap length: 42cm (under 60kg fits around the neck) - Style: Small, delicate, sharp, modern design");
         b3.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[2]));
         b3.setOpaque(false);
         b3.setContentAreaFilled(false);
-        JButton b4 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\4.jpg"));
+        JButton b4 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\4.jpg"));
         b4.setToolTipText("The Obsidian stone represents the root chakra, offering grounding and protection. This necklace symbolizes reconnecting with your deep roots and stability as you explore your depths. Made of volcanic glass, Obsidian is known as a stone that works like magic thanks to its metaphysical characteristics.");
         b4.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[3]));
         b4.setOpaque(false);
         b4.setContentAreaFilled(false);
-        JButton b5 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\5.jpg"));
+        JButton b5 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\5.jpg"));
         b5.setToolTipText("Blue topaz is an incredibly versatile gemstone that is both impressively strong as well as stunningly beautiful! It is hard to go wrong with a blue topaz necklace and it even comes in multiple different shades to best match your preferences.");
         b5.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[4]));
         b5.setOpaque(false);
         b5.setContentAreaFilled(false);
-        JButton b6 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\6.jpg"));
+        JButton b6 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\6.jpg"));
         b6.setToolTipText("Aquamarine Necklace This stunning aquamarine necklace is handmade using sterling silver. An aquamarine gemstone is the hero of the piece. The gemstone hangs within seven sterling silver rings each ring representing someone special in the wearers life.");
         b6.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[5]));
         b6.setOpaque(false);
         b6.setContentAreaFilled(false);
-        JButton b7 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\7.jpg"));
+        JButton b7 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\7.jpg"));
         b7.setToolTipText("sugilite bead bracelet is a special pain reliever and excellent stone for self-clear. It helps to clear headaches. Sugilite Bracelet It symbolizes purpose, hope, and harmony.");
         b7.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[6]));
         b7.setOpaque(false);
         b7.setContentAreaFilled(false);
-        JButton b8 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\8.jpg"));
+        JButton b8 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\8.jpg"));
         b8.setToolTipText("The Opal Bracelet is not your average friendship bracelet. It's refined, with a centrepiece of opals and gleaming cubic zirconia stones, but simple and fine.");
         b8.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[7]));
         b8.setOpaque(false);
         b8.setContentAreaFilled(false);
-        JButton b9 = new JButton(new ImageIcon("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\9.jpg"));
+        JButton b9 = new JButton(new ImageIcon("D:\\JavaStuff\\Java1\\src\\MainExam1\\9.jpg"));
         b9.setToolTipText("Quartz is the most powerful healing stone of the mineral kingdom, it’s able to work on any condition. Clear Quartz is known as the stone of power and amplifies any energy or intention.");
         b9.setBorder(BorderFactory.createTitledBorder(ProductP.StringP[8]));
         b9.setOpaque(false);
@@ -173,18 +174,17 @@ public class Frame1 {
 
 
         //to make the buttons do something
+
         b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
 
                 TotalP.Basket[0] =  TotalP.Basket [0] + 1;
-
+                TotalP.WholesaleChecker();
                 TotalP.TotalRetail[0] = TotalP.TotalRetail[0] + TotalP.myNum[0];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[0];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[0];
-                TotalP.WholesaleChecker();
-                JOptionPane.showMessageDialog(null, "Purchase Successful");
 
 
             }
@@ -195,11 +195,12 @@ public class Frame1 {
             public void actionPerformed(ActionEvent e) {
 
                 TotalP.Basket[1] =  TotalP.Basket [1] + 1;
+                TotalP.WholesaleChecker();
                 TotalP.TotalRetail[1] = TotalP.TotalRetail[1] + TotalP.myNum[1];
-                TotalP.TotalWholesale[1] = TotalP.TotalWholesale[1] + TotalP.myWholesale[1];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[1];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[1];
-                JOptionPane.showMessageDialog(null, "Purchase Successful");
+
+
                 }
 
         });
@@ -207,11 +208,10 @@ public class Frame1 {
             @Override
             public void actionPerformed(ActionEvent e) {
                 TotalP.Basket[2] =  TotalP.Basket [2] + 1;
+                TotalP.WholesaleChecker();
                 TotalP.TotalRetail[2] = TotalP.TotalRetail[2] + TotalP.myNum[2];
-                TotalP.TotalWholesale[2] = TotalP.TotalWholesale[2] + TotalP.myWholesale[2];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[2];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[2];
-                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -219,11 +219,10 @@ public class Frame1 {
             @Override
             public void actionPerformed(ActionEvent e) {
                 TotalP.Basket[3] =  TotalP.Basket [3] + 1;
+                TotalP.WholesaleChecker();
                 TotalP.TotalRetail[3] = TotalP.TotalRetail[3] + TotalP.myNum[3];
-                TotalP.TotalWholesale[3] = TotalP.TotalWholesale[3] + TotalP.myWholesale[3];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[3];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[3];
-                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -231,11 +230,10 @@ public class Frame1 {
             @Override
             public void actionPerformed(ActionEvent e) {
                 TotalP.Basket[4] =  TotalP.Basket [4] + 1;
+                TotalP.WholesaleChecker();
                 TotalP.TotalRetail[4] = TotalP.TotalRetail[4] + TotalP.myNum[4];
-                TotalP.TotalWholesale[4] = TotalP.TotalWholesale[4] + TotalP.myWholesale[4];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[4];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[4];
-                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -243,11 +241,10 @@ public class Frame1 {
             @Override
             public void actionPerformed(ActionEvent e) {
                 TotalP.Basket[5] =  TotalP.Basket [5] + 1;
+                TotalP.WholesaleChecker();
                 TotalP.TotalRetail[5] = TotalP.TotalRetail[5] + TotalP.myNum[5];
-                TotalP.TotalWholesale[5] = TotalP.TotalWholesale[5] + TotalP.myWholesale[5];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[5];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[5];
-                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -255,11 +252,10 @@ public class Frame1 {
             @Override
             public void actionPerformed(ActionEvent e) {
                 TotalP.Basket[6] =  TotalP.Basket [6] + 1;
+                TotalP.WholesaleChecker();
                 TotalP.TotalRetail[6] = TotalP.TotalRetail[6] + TotalP.myNum[6];
-                TotalP.TotalWholesale[6] = TotalP.TotalWholesale[6] + TotalP.myWholesale[6];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[6];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[6];
-                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -267,11 +263,10 @@ public class Frame1 {
             @Override
             public void actionPerformed(ActionEvent e) {
                 TotalP.Basket[7] =  TotalP.Basket [7] + 1;
+                TotalP.WholesaleChecker();
                 TotalP.TotalRetail[7] = TotalP.TotalRetail[7] + TotalP.myNum[7];
-                TotalP.TotalWholesale[7] = TotalP.TotalWholesale[7] + TotalP.myWholesale[7];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[7];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[7];
-                JOptionPane.showMessageDialog(null, "Purchase Successful");
             }
         });
 
@@ -280,11 +275,11 @@ public class Frame1 {
             public void actionPerformed(ActionEvent e) {
 
                 TotalP.Basket[8] =  TotalP.Basket [8] + 1;
+                TotalP.WholesaleChecker();
                 TotalP.TotalRetail[8] = TotalP.TotalRetail[8] + TotalP.myNum[8];
-                TotalP.TotalWholesale[8] = TotalP.TotalWholesale[8] + TotalP.myWholesale[8];
                 TotalP.Transac[0] = TotalP.Transac[0] + TotalP.myNum[8];
                 TotalP.Transac[1] = TotalP.Transac[1] + TotalP.myWholesale[8];
-                JOptionPane.showMessageDialog(null, "Purchase Successful");
+
             }
         });
 
@@ -295,7 +290,6 @@ public class Frame1 {
 
             }
         });
-
     }
 
 
@@ -303,7 +297,9 @@ public class Frame1 {
         int input = JOptionPane.showConfirmDialog(null, "Confirm Purchase?");
 // 0=yes, 1=no, 2=cancel
         if (input == 0) {
+
             ReceiptTXT();
+
         }
 
         }
@@ -311,7 +307,7 @@ public class Frame1 {
     public void ReceiptTXT() {
 
         try {
-            FileWriter myWriter = new FileWriter("C:\\Users\\ASUS\\IdeaProjects\\newExam\\src\\filename.txt");
+            FileWriter myWriter = new FileWriter("D:\\JavaStuff\\Java1\\src\\MainExam1\\filename.txt");
             myWriter.write("------------------------------------------------------------------\n");
             myWriter.write("  \t\t       *         Forever Gems         *             \n");
             myWriter.write("------------------------------------------------------------------\n");
@@ -337,6 +333,8 @@ public class Frame1 {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+
+
     }
 
     }

@@ -1,3 +1,5 @@
+package MainExam2.MainExam1;
+
 class ProdNames {
     String[] StringP = {"Cat Bracelet", "Bell bracelet", "Butterfly necklace", "Obsidian Necklace", "Topaz Necklace", "Aquamarine Necklace", "Sugilite Bracelet", "Opal Bracelet", "Quartz Bracelet"};
 }
@@ -23,8 +25,10 @@ class Total {
                 myWholesale[i] = myNum[i] * 1;
             } else if (Basket[i] == 5) {
                 myWholesale[i] = myNum[i] * 1.0 * 0.9;
+
             } else if (Basket[i] <= 10) {
                 myWholesale[i] = myNum[i] * 1.0 * 0.8;
+
             } else if (Basket[i] <= 15) {
                 myWholesale[i] = myNum[i] * 1.0 * 0.7;
             } else if (Basket[i] <= 20) {
